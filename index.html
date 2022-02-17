@@ -1,1 +1,129 @@
-宮本希。
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		:root {
+			--nav-width: 30%;
+			--baseColor: #f8D7E4;
+			--deepBaseColor: #f5a9c7;
+			--lightBaseColor: #fae4ec;
+			--nav-item-space: 10px;
+			--firstLetterSpacing: 10px;
+
+		}
+
+		body {
+			display: flex;
+			flex-wrap: wrap;
+
+		}
+
+		header {
+			background-color: var(--deepBaseColor);
+			width: 100%;
+
+		}
+
+		header h1 {
+			color: var(--lightBaseColor);
+			padding-left: var(--firstLetterSpacing);
+
+		}
+
+		nav {
+			background-color: var(--baseColor);
+			width: var(--nav-width);
+			height: 100vh;
+
+		}
+
+		nav h1 {
+			color: var(--deepBaseColor);
+			padding-left: var(--firstLetterSpacing);
+		}
+
+		nav li {
+			list-style-type: none;
+			border-top: solid 1px var(--deepBaseColor);
+			border-bottom: solid 1px var(--deepBaseColor);
+			margin-top: var(--nav-item-space);
+		}
+
+		main {
+			background-color: var(--lightBaseColor);
+			width: calc(100% - var(--nav-width));
+
+		}
+		main h1{
+			padding-left: var( --firstLetterSpacing);
+
+		}
+
+		section td{
+			text-align: left;
+
+		}
+		td:nth-child(2){
+			margin-left: var(--firstLetterSpacing);
+			
+
+		}
+
+	</style>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+	<header>
+		<h1> Nozomi Miyamoto Pages. </h1>
+
+	</header>
+	<nav>
+		<h1> navigation </h1>
+		<ul>
+			<li> Profile </li>
+			<li> JavaScript works
+				<ul>
+					<li> maze </li>
+					<li> circle equation graphics </li>
+					<li> calulation pi ( Monte Carlo simulation)
+					</li>
+				</ul>
+			</li>
+			<li> HTML and CSS works </li>
+
+		</ul>
+
+	</nav>
+	<main>
+		<h1> content </h1>
+		<section class="secContent" id="secProfile">
+			<table>
+				<tr> 
+					<th> item  </th>
+					<th> value </th>
+				</tr>
+				<tr>
+					<td> Name </td>
+					<td> Nozomi Miyamoto </td>
+				</tr>
+				<tr>
+					<td>Birthday </td>
+					<td>1900.01.01</td>
+				</tr>
+				<tr>
+					<td> final Education </td>
+					<td> Let's go high school</td>
+				</tr>
+			</table>
+		</section>
+	</main>
+</body>
+
+</html>
